@@ -1,0 +1,38 @@
+[
+    {
+        "model": "test1.product",
+        "pk": 1,
+        "fields": {
+            "name": "Product 1",
+            "description": "This is the first product.",
+            "price": "19.99",
+            "create_date": "2024-12-07T00:00:00Z",
+            "write_time": "2024-12-07T00:00:00Z",
+            "views": 150
+        }
+    },
+    {
+        "model": "test1.product",
+        "pk": 2,
+        "fields": {
+            "name": "Product 2",
+            "description": "This is the second product.",
+            "price": "29.99",
+            "create_date": "2024-12-07T00:00:00Z",
+            "write_time": "2024-12-07T00:00:00Z",
+            "views": 250
+        }
+    },
+    {
+        "model": "test1.product",
+        "pk": 3,
+        "fields": {
+            "name": "Product 3",
+            "description": "This is the third product.",
+            "price": "39.99",
+            "create_date": "2024-12-07T00:00:00Z",
+            "write_time": "2024-12-07T00:00:00Z",
+            "views": 300
+        }
+    }
+]
