@@ -62,20 +62,22 @@
     </div>
   </form>
 
-
-  <div class="row row-cols-4 mt-4 g-4">
-    {% fro product in products %}
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="https://wallpapers-clan.com/wp-content/uploads/2023/11/funny-shrek-in-the-forest-desktop-wallpaper-cover.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="container text-center"></div>
+    <div class="row row-cols-4 mt-4 g-4">
+      {% for product in products %}
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="https://wallpapers-clan.com/wp-content/uploads/2023/11/funny-shrek-in-the-forest-desktop-wallpaper-cover.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{product.name}}</h5>
+              <p class="card-text fw-bold">{{product.price}}</p>
+              <p class="card-text">{{product.description}}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
         </div>
-      </div>
-    {%end for%}
+      {%endfor%}
+  </div>
 
       <div class="col">
         <div class="card" style="width: 18rem;">
